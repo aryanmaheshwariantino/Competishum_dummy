@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/etArrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/etInfoCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/info_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/nunito"
+        android:lineHeight="19.6sp"
+        android:text="Help?"
+
+        android:textColor="#3E3EF7"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/etInfoCircle"
+        app:layout_constraintStart_toEndOf="@+id/etInfoCircle"
+        app:layout_constraintTop_toTopOf="@+id/etInfoCircle"
+        tools:layout_editor_absoluteX="360dp" />
+
+
+    <TextView
+        android:id="@+id/etWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/nunito"
+        android:lineHeight="39.2sp"
+        android:text="Welcome"
+        android:textColor="#2B2829"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etArrow_left"
+        app:layout_constraintTop_toBottomOf="@+id/etArrow_left" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/info_circle"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintStart_toEndOf="@+id/etWelcomeText"
+        app:layout_constraintTop_toTopOf="@+id/etWelcomeText"
+        app:layout_constraintBottom_toBottomOf="@+id/etWelcomeText"/>
+
+    <TextView
+        android:id="@+id/etSuccessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to View Your Path to Success."
+        android:lineHeight="24sp"
+        android:textSize="16dp"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="14dp"
+        android:textColor="#726C6C"
+        app:layout_constraintStart_toStartOf="@+id/etWelcomeText"
+        app:layout_constraintTop_toBottomOf="@+id/etWelcomeText"/>
+
+    <TextView
+        android:id="@+id/etPhnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No."
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nunito"
+        app:layout_constraintStart_toStartOf="@+id/etSuccessText"
+        app:layout_constraintTop_toBottomOf="@+id/etSuccessText"
+        android:textColor="#151314"
+        android:lineHeight="21sp"/>
+
+    <EditText
+        android:id="@+id/etEnterMob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_home_edittext"
+        android:padding="12dp"
+        android:hint="Enter Your Number"
+        android:textColorHint="#898384"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:drawableStart="@drawable/start_text"
+        android:drawablePadding="12dp"
+        app:layout_constraintStart_toStartOf="@+id/etPhnText"
+        app:layout_constraintTop_toBottomOf="@+id/etPhnText"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/Line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_3"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="#F2F2F2"
+        app:layout_constraintStart_toStartOf="@+id/etEnterMob"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterMob"/>
+
+    <TextView
+        android:id="@+id/textOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="32dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintStart_toEndOf="@+id/Line3"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterMob"/>
+
+    <ImageView
+        android:id="@+id/etLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_3"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintStart_toEndOf="@+id/textOr"
+        android:layout_marginTop="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterMob"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/roundedConstraintView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_google_background"
+        app:layout_constraintTop_toBottomOf="@+id/etLineEnd"
+        app:layout_constraintStart_toStartOf="@+id/etEnterMob"
+        app:layout_constraintEnd_toEndOf="@+id/etEnterMob"
+        android:layout_marginTop="35dp"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue with Google"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewInside"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvTermsPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By signing up, you agree to our Terms &amp; Conditions \nand Privacy Policy"
+        android:textColor="#433E3F"
+        android:textSize="14sp"
+        android:fontFamily="@font/nunito"
+        android:lineHeight="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerify"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:cornerRadius="8dp"
+        android:backgroundTint="#B5B3B3"
+        android:text="Verify"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
